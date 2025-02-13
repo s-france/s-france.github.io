@@ -1,0 +1,194 @@
+{% load static %}
+
+<!--<head> contains metadata for page (style, info, etc.)-->
+<head>
+
+    <!--using default style sheet-->
+    <link rel="stylesheet" href="/static/default.css">
+
+    <!--<style> contains style specs-->
+    <style>
+        h3{
+            color: rgb(40, 40, 136);
+            font-weight: 500%;
+        }
+
+    </style>
+
+</head>
+
+
+<!--<body> contains the actual text to be displayed-->
+<body>
+
+    <!--Navigation Bar-->
+    <div class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="/projects">Portfolio</a></li>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li style="float:right;" ><a href="contact">Contact</a></li>
+
+        </ul>
+
+    </div>
+
+    <!--Title card-->
+    <div class="title">
+        <h1>
+            <b>Sam France</b>
+        </h1>
+        
+        <!--<br>-->
+
+        <h2>
+            Portfolio
+        </h2>
+
+    </div>
+
+    <!--Personal Projects-->
+    <!--<div class="column">-->
+    <h2 style="text-align: center;">
+        Personal Projects
+    </h2>
+
+    <!--Squid Battle-->
+    <div class="project">
+        <img src="{% static 'squidimage.png' %}" alt="Squid Battle screenshot">
+
+
+        <h3 style="margin-bottom: 0;">
+            Squid Battle
+        </h3>
+
+        <p style="margin-top: 0;">
+            "Squid battle" is an independent video game project developed in Unity. It is a local multiplayer party game for 2-6 players.  Each player controls a squid character, and plays with the goal of pushing other players out of the battle arena to become the last player standing.  The game is still in early development, but is planned for commercial release in the future.
+        </p>
+    </div>
+
+
+    <div class="project">
+        <img src="{% static 'picogame.png' %}" alt="PICO-8 Engine Screenshot">
+
+        <h3 style="margin-bottom: 0;">
+            PICO-8 Game Engine Development
+        </h3>
+
+        <p style="margin-top: 0;">
+            <a href="https://www.lexaloffle.com/pico-8.php">PICO-8</a> is an 8-bit "fantasy console" designed for making small games and other programs in Lua.  I am currently working alongside a friend to develop a game engine within PICO-8 optimized for it's unique software limitations.  So far the engine features an object-oriented heirarchy, hitboxes, basic physics interactions (movement, collision, knockback), dynamic particle system, and AI navigation using A* algorithm.  I look forward to developing a game that takes advantage of all the features in our engine.
+        </p>
+
+    </div>
+
+    <div class="project">
+        <h3 style="margin-bottom: 0;">
+            Personal Website Development
+        </h3>
+
+        <p style="margin-top: 0;">
+            The website you see before you was written by myself.  I am continuously developing new features for the site to hone my front-end and back-end web design skills.
+        </p>
+
+    </div>
+
+
+
+    <!--Professional Experience-->
+    <h2 style="text-align: center;">
+        Professional Experience
+    </h2>
+
+    <!--Outlier-->
+    <div class="project">
+        <img src="https://framerusercontent.com/images/4CIp67iRHdHqzFnhBIJ7iIx7N6M.svg" alt="Outlier logo" style="margin-top: 5px; margin-right: 10px;">
+
+        <h3 style="margin-bottom: 0;">
+            Programmer, Outlier AI
+        </h3>
+        <h3 style="margin-bottom: 0; margin-top: 0; font-size: 100%;">
+            2024
+        </h3>
+
+        <p style="margin-top: 0;">
+            I have done remote contract work as a "Coding Expert" for <a href="https://outlier.ai/">Outlier AI</a>.  My responsibilities included editing and evaluating LLM-generated code, as well as writing new code to be used as AI training material.
+        </p>
+    </div>
+
+
+
+    <div class="project">
+        <img src="https://i0.wp.com/railroadconstruction.com/wp-content/uploads/2024/10/ESOP-RCC-R.png?resize=300%2C300&ssl=1" alt="RCC logo" style="margin-top: 5px; margin-right: 10px;">
+
+
+        <h3 style="margin-bottom: 0;">
+            IT Intern, Railroad Construction Company inc
+        </h3>
+        <h3 style="margin-bottom: 0; margin-top: 0; font-size: 100%;">
+            Winter 2020-21, Winter 2021-22
+        </h3>
+
+        <p style="margin-top: 0;">
+            I did a winter internship in Railroad Construction's IT department.  During my time there I organized and maintained company servers and office hardware.
+        </p>
+
+    </div>
+
+
+    <!--Education Projects-->
+    <h2 style="text-align: center;">
+        School Projects
+    </h2>
+
+    <div class="project">
+
+        <h3 style="margin-bottom: 0;">
+            Machine Learning Models
+        </h3>
+
+        <h3 style="margin-bottom: 0; margin-top: 0; font-size: 100%;">
+            (University at Buffalo: CSE 446, CSE 441)
+        </h3>
+
+        <p style="margin-top: 0;">
+            My coursework in college heavily featured classes on Machine Learning and Reinforcement Learning.  From this, I became familiar with common python frameworks for machine learning.
+        </p>
+    </div>
+
+    <div class="project">
+
+        <h3 style="margin-bottom: 0;">
+            Web Application
+        </h3>
+
+        <h3 style="margin-bottom: 0; margin-top: 0; font-size: 100%;">
+            (University at Buffalo: CSE 312)
+        </h3>
+
+        <p style="margin-top: 0;">
+            As part of UB's web development course I developed a web application
+        </p>
+    </div>
+
+    <div class="project">
+
+        <h3 style="margin-bottom: 0;">
+            Bounce Tower
+        </h3>
+
+        <h3 style="margin-bottom: 0; margin-top: 0; font-size: 100%;">
+            (University at Buffalo: CSE 420)
+        </h3>
+
+        <p style="margin-top: 0;">
+            As part of UB's game development course.  I worked alongside 2 of my classmates to design, develop, and playtest a game in Unreal Engine.  Our game, <a href="https://dbreizor.itch.io/bounce-tower">"Bounce Tower"</a> is a 3D arcade platformer similar to "Doodle Jump".
+        </p>
+    </div>
+
+
+
+
+
+
+</body>
