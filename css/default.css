@@ -1,0 +1,144 @@
+/*default css style*/
+
+
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: powderblue;
+}
+
+
+
+p {
+    color: rgb(0, 0, 0);
+    font-size: 17;
+    text-align: justify;
+}
+
+.navbar {
+
+    ul {
+        position: fixed;
+        top: 0;
+        width: 50%;
+        min-width: 500px;
+        list-style-type: none;
+        
+        margin:0;
+        
+        
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(39, 39, 39);
+    }
+    
+    li {
+        float: left;
+        font-size: 140%;
+    }
+
+    li:first-child {
+
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover {
+        background-color: black;
+    }
+
+    .active {
+        background-color: rgb(155, 0, 0);
+    }
+
+}
+
+.title {
+    margin-top: 60px;
+    color: rgb(40, 40, 136);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /*Title text*/
+    h1 {
+        font-size: 250%;
+        font-weight: bolder;
+        text-align: center;
+        
+        
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    /*Subtitle text*/
+    h2 {
+        margin: 0;
+        padding: 0;
+        margin-top: 0px;
+        text-align: center;
+        font-size: 110%;
+    }
+
+
+}
+
+.column {
+    p {
+        text-align: left;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    
+
+    margin-left: max(3%, 10px);
+    width: 30%;
+    float: left;
+}
+
+.project {
+    width: 100%;
+
+    padding-left: 5px;
+    margin-bottom: 5px;
+
+    border-width: 1px;
+    border-style: solid;
+
+    background-color: rgb(212, 241, 245);
+    
+    h3 {
+        margin-top: 2px;
+        margin-bottom: 0;
+    }
+
+    p {
+        text-align: justify;
+        text-align: left;
+        margin-right: 30%;
+
+        padding-bottom: 0;
+    }
+
+    img {
+        border-width: 2px;
+        border-style: solid;
+
+        float: right;
+        width: 28%;
+        max-width: 28%;
+
+        height: auto;
+        max-height: min-content;
+        margin-left: 5px;
+
+    }
+}
+
