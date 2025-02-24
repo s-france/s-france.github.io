@@ -105,7 +105,7 @@ p {
 
 .project {
     width: 100%;
-    height: min-content;
+    height: 100%;
 
     padding-left: 5px;
     margin-bottom: 5px;
@@ -128,19 +128,31 @@ p {
         padding-bottom: 0;
     }
 
-    img {
+
+    .image {
         border-width: 2px;
         border-style: solid;
-
         float: right;
-        
+
         width: 28%;
         max-width: 28%;
 
-        height: auto;
-        max-height: min-content;
         margin-left: 5px;
 
+        /*background-image: ;*/
+        background-size: contain;
+
+    }
+
+    img {
+        
+
+        
+        
+        
+
+        height: auto;
+        max-height: min-content;
     }
 }
 
