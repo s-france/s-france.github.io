@@ -105,6 +105,7 @@ p {
 
 .project {
     width: 100%;
+    height: min-content;
 
     padding-left: 5px;
     margin-bottom: 5px;
@@ -132,6 +133,7 @@ p {
         border-style: solid;
 
         float: right;
+        
         width: 28%;
         max-width: 28%;
 
