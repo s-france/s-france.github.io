@@ -105,7 +105,7 @@ p {
 
 .project {
     width: 100%;
-    height: min-content;
+    max-height: min-content;
 
     padding-left: 5px;
     margin-bottom: 5px;
@@ -138,7 +138,6 @@ p {
         max-width: 28%;
 
         height: auto;
-        max-height: min-content;
         margin-left: 5px;
 
     }
