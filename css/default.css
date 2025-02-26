@@ -133,7 +133,7 @@ p {
         border-style: solid;
 
         float: right;
-        clear: right;
+        clear: both;
         
         /*width: 28%;*/
         max-width: 28%;
