@@ -5,6 +5,9 @@
 body {
     margin-left: 25%;
     margin-right: 25%;
+
+    min-width: 500px;
+
     background-color: powderblue;
 }
 
@@ -123,7 +126,7 @@ p {
     p {
         text-align: justify;
         text-align: left;
-        /*margin-right: 30%;*/
+        margin-right: 30%;
 
         padding-bottom: 0;
     }
