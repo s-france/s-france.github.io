@@ -52,8 +52,20 @@ p {
         padding: 14px 16px;
         text-decoration: none;
     }
+
+    li btn {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
     
     li a:hover {
+        background-color: black;
+    }
+
+    li btn:hover {
         background-color: black;
     }
 
@@ -149,5 +161,43 @@ p {
         margin-left: 5px;
 
     }
+}
+
+/*popup background*/
+.modal-background {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/*contact info popup*/
+.contact {
+    background-color: aliceblue;
+    margin:auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%
+
+}
+
+.close-modal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
