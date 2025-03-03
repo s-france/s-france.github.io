@@ -33,6 +33,37 @@
 
     </div>
 
+    <!--Contact Modal-->
+    <div id="contactsModal" class="modal-background">
+        <div class="contact">
+            <span class="close-modal">&times;</span>
+            <p>Contact Text...</p>
+        </div>
+
+    </div>
+
+    <!--Contacts Modal Script-->
+    <script>
+        var contactsModal = document.getElementById("contactsModal");
+        var btn = document.getElementById("contactsBtn");
+        var span = document.getElementByClassName("close-modal")[0];
+
+        btn.onclick = function() {
+            contactsModal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            contactsModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == contactsModal) {
+                contactsModal.style.display = "none";
+            }
+        }
+
+    </script>
+
 
     <!--Main Content-->
     
