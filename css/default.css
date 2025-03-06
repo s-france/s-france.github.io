@@ -187,7 +187,8 @@ p {
 /*contact info popup*/
 .contact {
     font-size: 120%;
-    background-color: aliceblue;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:lightpink;
     margin:auto;
     margin-top:20%;
     padding: 20px;
