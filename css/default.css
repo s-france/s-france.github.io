@@ -195,6 +195,8 @@ p {
     border: 1px solid black;
     width: 30%;
     height: 20%;
+    min-width: 276px;
+    min-height: 185px;
 
     img {
         float:left;
