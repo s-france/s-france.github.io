@@ -195,6 +195,7 @@ p {
     width: 30%;
 
     img {
+        float: left;
         max-height: 100px;
         max-width: 100px;
     }
